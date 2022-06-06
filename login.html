@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header-flex">
+            <div>
+                <p class="logo">O.</p>
+            </div>
+            <ul class="list">
+                <li> <a href="index.html">About</a> </li>
+                <li> <a href="contact.html">Contact</a></li>
+                <li> <a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class="contact login-form">
+
+            <div class="contact-form-container">
+                <div class="Login-header">
+                    <h1>Sign in!</h1>
+                    <p>signing in gives you access to more information</p>
+                </div>
+                <form action="https://formspree.io/f/mdobejwa" method="POST">
+                    <div class="form-control">
+                        <input type="text" id="name" name="sender-name" placeholder="Please Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <input type="email" id="email" name="sender-email" placeholder="Please Enter Your Email"
+                            class="input-field" required />
+                    </div>
+
+                    <div class="btn-container">
+                        <a href="contact.html"> <button class="contact-btn" id="">login</button></a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-flex">
+
+            <div class="footer-social">
+                <p>Made by Me</p>
+                <a href="https://www.twitter.com/fizy_hector"><img src="images/icons8-twitter.svg"
+                        alt="twitter-logo"></a>
+            </div>
+            <p>&COPY; 2022</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 200px;
+        height: 300px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        transition: transform 1s ease-in-out;
+        /* transform-style: preserve-3d; */
+        position: relative;
+    }
+
+    .card-container:hover .card {
+        transform: rotateY(180deg);
+    }
+    .card figure {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: 5px;
+    }
+
+    h2 {
+        margin: 0px;
+        font-weight: 100;
+    }
+
+    .card .front {
+        background: orangered;
+        color: wheat;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card .back {
+        background: rgb(138, 17, 57);
+        color: white;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    button {
+        width: 60%;
+        padding: 15px;
+        background-color: orchid;
+        color: aliceblue;
+        font-size: 20px;
+        font-weight:100;
+        border: none;
+        border-radius: 10px;
+    }
+    button:hover{
+        background:olivedrab;
+        transition:transform 9s ease-in-out;
+        color:black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+
+            <div class="card">
+                <figure class="front">
+                    <h1>Pro TIER</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aspernatur, consectetur?</p>
+                </figure>
+                <figure class="back">
+                    <h1>PRICE:20$</h1>
+                    <div><button>BUYYY</button></div>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
